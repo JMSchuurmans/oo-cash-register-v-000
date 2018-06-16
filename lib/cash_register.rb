@@ -13,8 +13,10 @@ class CashRegister
     purchases[:item] = item
     purchases[:price] = price
     purchases[:quantity] = quantity
-    self.total += price * quantity
+
     @items << purchases
+
+    self.total += price * quantity
   end
 
   def apply_discount
