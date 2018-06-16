@@ -12,7 +12,8 @@ class CashRegister
   end
 
   def apply_discount
-    self.cash_register_with_discount
+    if @discount
+      @total = total * (1 - discount / 100)
 
   end
 
