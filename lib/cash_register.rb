@@ -12,6 +12,7 @@ class CashRegister
   end
 
   def apply_discount
+    self.cash_register_with_discount
 
   end
 
